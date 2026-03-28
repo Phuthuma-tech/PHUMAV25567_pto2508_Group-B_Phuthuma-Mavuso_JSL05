@@ -44,8 +44,6 @@ In this project, you will implement a task management system where **tasks are p
 A fully functional task management system where tasks are dynamically loaded from **local storage**, tasks can be **added through a modal**, and the application **remains consistent** after refreshing the page. The code will be modular, well-documented, and easy to maintain, following best practices for JavaScript development.
 
 
-This refactor transforms the project brief into a high-caliber **README** suitable for a professional portfolio. It shifts the focus from "learning objectives" to "technical implementation and features," which is exactly what a hiring manager or collaborator looks for.
-
 ---
 
 # 📝 Kanban Flow: Persistent Task Management System
@@ -103,7 +101,7 @@ The UI undergoes specific transformations to maintain usability on smaller scree
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/kanban-persistence-system.git
+    git clone https://github.com/PHUMAV25567_pto2508_Group-B_Phuthuma-Mavuso_JSL05.git
     ```
 2.  **Navigate to the directory:**
     ```bash
@@ -113,5 +111,3 @@ The UI undergoes specific transformations to maintain usability on smaller scree
     Open `index.html` via Live Server or any static file viewer.
 
 ---
-
-**Would you like me to help you draft the JSDoc comments for your main storage or rendering functions next?**
