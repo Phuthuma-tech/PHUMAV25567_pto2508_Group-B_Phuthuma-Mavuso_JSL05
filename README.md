@@ -42,3 +42,76 @@ In this project, you will implement a task management system where **tasks are p
 ## Expected Outcome
 
 A fully functional task management system where tasks are dynamically loaded from **local storage**, tasks can be **added through a modal**, and the application **remains consistent** after refreshing the page. The code will be modular, well-documented, and easy to maintain, following best practices for JavaScript development.
+
+
+This refactor transforms the project brief into a high-caliber **README** suitable for a professional portfolio. It shifts the focus from "learning objectives" to "technical implementation and features," which is exactly what a hiring manager or collaborator looks for.
+
+---
+
+# 📝 Kanban Flow: Persistent Task Management System
+
+A robust, modular Kanban board application engineered for high performance and data persistence. This project (JSL05) builds upon a dynamic DOM foundation to implement **Local Storage synchronization**, ensuring a seamless user experience where task data survives browser refreshes and sessions.
+
+## 🚀 Technical Overview
+
+This application serves as a sophisticated task orchestrator, utilizing a "Mobile-First" design philosophy and a modular JavaScript architecture. It provides a centralized interface for managing project lifecycles through interactive modals and persistent state management.
+
+### Key Technical Implementations:
+* **Data Persistence:** Integration with the `window.localStorage` API to serialize and retrieve task states.
+* **State-Driven UI:** Automatic synchronization between the underlying data object and the DOM, ensuring real-time updates across the "To Do," "Doing," and "Done" columns.
+* **Modular Architecture:** Separation of concerns across distinct JS modules (e.g., storage handlers, UI renderers, and modal controllers).
+* **Responsive Modal Logic:** A dynamic "Add Task" modal system that adapts its layout and trigger mechanisms based on device viewport (Desktop vs. Mobile).
+
+## 🛠️ Tech Stack
+
+* **Logic:** JavaScript (ES6+) – Modular Design Pattern
+* **Persistence:** LocalStorage API
+* **Styling:** CSS3 (Flexbox/Grid) with a focus on Figma-to-Code fidelity
+* **Documentation:** JSDoc for comprehensive function and module tracking
+* **Structure:** Semantic HTML5
+
+## ✨ Core Features
+
+### 💾 Persistent State Management
+The application acts as a "single source of truth." On initialization, it parses stored JSON data to repopulate the board. Every "Add" or "Update" action triggers a synchronous update to the local database, preventing data loss.
+
+### ➕ Dynamic Task Creation
+Users can instantly expand their workflow via the "Add Task" interface.
+* **Validation:** Ensures title and description fields are processed correctly.
+* **Categorization:** Dropdown logic assigns tasks to specific workflow columns upon creation.
+* **Instant Injection:** New tasks are rendered to the DOM immediately without requiring a page reload.
+
+### 📱 Responsive Adaptability
+The UI undergoes specific transformations to maintain usability on smaller screens:
+* **Interactive Modals:** Fully responsive modal overlays following strict Figma specifications.
+* **Adaptive Controls:** The "Add Task" button transforms into a mobile-optimized variant to maximize screen real estate.
+
+## 📂 Project Structure
+
+```text
+├── src/
+│   ├── modules/
+│   │   ├── storage.js      # LocalStorage CRUD operations
+│   │   ├── render.js       # DOM injection and column management
+│   │   └── modal.js        # Event listeners and modal toggling
+│   └── app.js              # Main entry point and initialization
+├── index.html              # Semantic structure
+└── assets/                 # Design assets and global styles
+```
+
+## ⚙️ Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/kanban-persistence-system.git
+    ```
+2.  **Navigate to the directory:**
+    ```bash
+    cd kanban-persistence-system
+    ```
+3.  **Run locally:**
+    Open `index.html` via Live Server or any static file viewer.
+
+---
+
+**Would you like me to help you draft the JSDoc comments for your main storage or rendering functions next?**
