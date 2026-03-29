@@ -68,6 +68,12 @@ h4 {
   letter-spacing: 0.125rem; /* Makes heading more spaced */
 }
 
+.task-div h4 {
+  color: var(--primary-font-color);
+  font-size: 0.9375rem; /* Matches your .task-div base size */
+  font-weight: 700;    /* Keeps it bold and clear */
+}
+
 .board-btn {
   font-family: inherit;
   display: flex;
