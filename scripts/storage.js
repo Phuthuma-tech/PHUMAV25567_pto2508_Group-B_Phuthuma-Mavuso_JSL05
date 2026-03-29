@@ -1,6 +1,6 @@
 /**
  * Retrieves tasks from localStorage.
- * @returns {Array} An array of task objects.
+  @returns {Array} *An array of task objects.
  */
 export const getTasks = () => {
     const tasks = localStorage.getItem('tasks');
@@ -9,7 +9,7 @@ export const getTasks = () => {
 
 /**
  * Saves the task array to localStorage.
- * @param {Array} tasks - The current list of tasks.
+ @param {Array} tasks *The current list of tasks.
  */
 export const saveTasks = (tasks) => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
