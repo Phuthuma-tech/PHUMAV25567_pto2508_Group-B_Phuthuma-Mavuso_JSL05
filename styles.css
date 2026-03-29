@@ -227,8 +227,12 @@ dialog {
 }
 
 /* Style the modal box */
-#task-modal::backdrop {
-  background: rgba(0, 0, 0, 0.3);
+/* This targets the backdrop of both the Task View and Add Task modals */
+#task-modal::backdrop,
+.modal-overlay::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 is slightly darker than your current 0.3 */
+  backdrop-filter: blur(2px); /* Optional: adds a slight blur for a premium feel */
+  transition: all 0.3s ease;
 }
 
 #task-modal {
@@ -459,6 +463,16 @@ textarea {
       380px
     ); /* Stack columns in single column */
   }
+
+@media screen and (max-width: 576px) {
+  #add-new-task-btn {
+    font-size: 0; /* Hides the "+ Add New Task" text */
+  }
+  #add-new-task-btn::before {
+    content: "+"; /* Shows only the plus sign */
+    font-size: 18px;
+  }
+}
 
   .column-div {
     padding: 24px;
